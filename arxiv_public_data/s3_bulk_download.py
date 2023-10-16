@@ -15,11 +15,9 @@ import arxiv_public_data.s3_bulk_download as s3
 # Download manifest file (or load if already downloaded)
 >>> manifest = s3.get_manifest()
 
-# Download tar files and convert pdf to text
-# Costs money! Will only download if it does not find files
->>> s3.process_manifest_files(manifest)
 
-# If you just want to download the PDFs and not convert to text use
+
+# If you just want to download the PDFs 
 >>> s3.download_check_tarfiles(manifest)
 ```
 """

@@ -57,4 +57,7 @@ LOGGER = baselog
 
 for dirs in [DIR_BASE, DIR_PDFTARS, DIR_FULLTEXT, DIR_OUTPUT]:
     if not os.path.exists(dirs):
-        os.mkdir(dirs)
+        os.makedirs(dirs)
+        
+
+        
